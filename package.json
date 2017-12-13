@@ -1,6 +1,6 @@
 {
   "name": "wm-marketplace",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Walmart Marketplace API client for Javascript",
   "main": "index.js",
   "scripts": {
