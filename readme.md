@@ -11,7 +11,6 @@ Installation:
 
 ```js
 npm i mws-marketplace -S
-
 ```
 
 Initialization:
@@ -49,11 +48,22 @@ wmc.Inventory.GetInventory({
 
 # Available Endpoints (updated as more are added)
 
-## Orders
-[Walmart Documentation][walmart-orders]
+## Orders: ([Walmart Documentation][walmart-orders])
 
-#### GetAll
-[Walmart Documentation][walmart-orders-getall]
+### GetAllReleased ([Walmart Documentation][walmart-orders-getallrealeased])
+
+Available Parameters:
+* limit: string. Restrictions: Less than 200
+* createdStartDate: string. Available formats: [UTC date, timestamp]
+
+Usage:
+```js
+mws.Orders.GetAllReleased({
+  // Your parameters
+})
+```
+
+### GetAll ([Walmart Documentation][walmart-orders-getall])
 
 Available Parameters:
 * sku: string
@@ -71,11 +81,27 @@ mws.Orders.GetAll({
 })
 ```
 
-## Inventory
-[Walmart Documentation][walmart-inventory]
+### GetAnOrder ([Walmart Documentation][walmart-orders-getorder])
 
-#### GetInventory
-[Walmart Documentation][walmart-inventory-get]
+Available Parameters:
+* sku: string
+* customerOrderId: string
+* purchaseOrderId: string
+* status: string. Available Statuses: [Created, Acknowledged, Shipped, Canceled]
+* createdStartDate: string. Available formats: [UTC date, timestamp]
+* toExpectedShipDate: string. Format: YYYY-MM-DD
+* limit: string. Restrictions: Less than 200
+
+Usage:
+```js
+mws.Orders.GetAnOrder({
+  // Your parameters
+})
+```
+
+## Inventory ([Walmart Documentation][walmart-inventory])
+
+### GetInventory ([Walmart Documentation][walmart-inventory-get])
 
 Available Parameters:
 * sku: string
@@ -91,7 +117,9 @@ mws.Inventory.GetInventory({
 [credentials]: https://seller.walmart.com/api-key
 
 [walmart-orders]: https://developer.walmart.com/#/apicenter/marketPlace/latest#orderManagement
+[walmart-orders-getallreleased]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAllReleasedOrders
 [walmart-orders-getall]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAllOrders
+[walmart-orders-getorder]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAnOrder
 
 [walmart-inventory]: https://developer.walmart.com/#/apicenter/marketPlace/latest#inventoryManagement
 [walmart-inventory-get]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getInventoryForAnItem
