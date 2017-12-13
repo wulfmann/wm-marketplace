@@ -5,6 +5,8 @@ Under a lot of work right now and is not safe to use in production. PR's welcome
 
 Promise based and uses many es6 features so you will need to either use a babel step or use a node version >4
 
+[![forthebadge](http://forthebadge.com/badges/no-ragrets.svg)](http://forthebadge.com)
+
 ## Examples
 
 Installation:
