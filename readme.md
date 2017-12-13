@@ -6,12 +6,14 @@ Under a lot of work right now and is not safe to use in production. PR's welcome
 ## Examples
 
 Installation:
+
 ```js
 npm i mws-marketplace -S
 
 ```
 
 Initialization:
+
 You will need your api credentials from walmart which can be gotten [here][credentials]
 The walmart docs don't really say much on this, but your correlation id is any arbitrary string.
 Channel type will appear beneath your consumer and private keys.
@@ -43,13 +45,12 @@ wmc.Inventory.GetInventory({
 * Add in throttling / pagification
 * Add File upload
 
+# Available Endpoints (updated as more are added)
 
-##Available Endpoints (updated as more are added)
-
-### Orders
+## Orders
 [Walmart Documentation][walmart-orders]
 
-GetAll
+#### GetAll
 [Walmart Documentation][walmart-orders-getall]
 
 Available Parameters:
@@ -68,10 +69,10 @@ mws.Orders.GetAll({
 })
 ```
 
-### Inventory
+## Inventory
 [Walmart Documentation][walmart-inventory]
 
-GetInventory
+#### GetInventory
 [Walmart Documentation][walmart-inventory-get]
 
 Available Parameters:
