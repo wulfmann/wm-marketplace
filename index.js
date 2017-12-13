@@ -12,7 +12,7 @@ const credentials = {
 
 const wmc = Walmart.Client(credentials)
 
-wmc.Orders.GetAll({
+wmc.Orders.GetAllReleased({
   createdStartDate: '2017-12-10'
 })
 .then((response) => {
