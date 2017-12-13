@@ -119,7 +119,7 @@ mws.Inventory.GetInventory({
 [credentials]: https://seller.walmart.com/api-key
 
 [walmart-orders]: https://developer.walmart.com/#/apicenter/marketPlace/latest#orderManagement
-[walmart-orders-getallreleased]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAllReleasedOrders
+[walmart-orders-getallrealeased]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAllReleasedOrders
 [walmart-orders-getall]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAllOrders
 [walmart-orders-getorder]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getAnOrder
 
