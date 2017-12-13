@@ -1,0 +1,23 @@
+{
+  "name": "wm-marketplace",
+  "version": "1.0.0",
+  "description": "Walmart Marketplace API client for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "walmart",
+    "marketplace",
+    "api",
+    "sdk",
+    "walmart",
+    "marketplace"
+  ],
+  "author": "Joseph Snell",
+  "license": "MIT",
+  "dependencies": {
+    "node-rsa": "^0.4.2",
+    "request": "^2.83.0"
+  }
+}
