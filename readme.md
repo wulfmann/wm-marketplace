@@ -1,6 +1,6 @@
 # wm-marketplace
 
-This is a simple sdk to use when interacting with the [Walmart mMrketplace API][apiDocs]
+This is a simple sdk to use when interacting with the [Walmart Marketplace API][apiDocs]
 Under a lot of work right now and is not safe to use in production. PR's welcome.
 
 ## Examples
