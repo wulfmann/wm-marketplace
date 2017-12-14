@@ -115,6 +115,23 @@ mws.Inventory.GetInventory({
 })
 ```
 
+## Prices ([Walmart Documentation][walmart-prices])
+
+### ItemPrice ([Walmart Documentation][walmart-prices-item])
+
+Endpoint to update an individual sku's price.
+
+Available Parameters:
+* sku: string. Required
+* price: string. Required
+
+Usage:
+```js
+mws.Prices.ItemPrice({
+  // your parameters
+})
+```
+
 ## Reports ([Walmart Documentation][walmart-reports])
 
 Reports has a single endpoint, that can generate different types of reports based on the url query.
@@ -144,5 +161,8 @@ mws.Reports.GetReport({
 
 [walmart-inventory]: https://developer.walmart.com/#/apicenter/marketPlace/latest#inventoryManagement
 [walmart-inventory-get]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getInventoryForAnItem
+
+[walmart-prices]: https://developer.walmart.com/#/apicenter/marketPlace/latest#priceManagement
+[walmart-prices-get]: https://developer.walmart.com/#/apicenter/marketPlace/latest#updateAPrice
 
 [walmart-reports]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getReport
