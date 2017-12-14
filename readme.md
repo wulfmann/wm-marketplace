@@ -115,6 +115,25 @@ mws.Inventory.GetInventory({
 })
 ```
 
+## Reports ([Walmart Documentation][walmart-reports])
+
+Reports has a single endpoint, that can generate different types of reports based on the url query.
+
+Available Parameters:
+* type: string
+
+Available Queries:
+* item
+* buyBox
+* cpa
+
+Usage:
+```js
+mws.Reports.GetReport({
+  type: 'item'
+})
+```
+
 [apiDocs]: https://developer.walmart.com/#/apicenter/marketPlace/latest
 [credentials]: https://seller.walmart.com/api-key
 
@@ -125,3 +144,5 @@ mws.Inventory.GetInventory({
 
 [walmart-inventory]: https://developer.walmart.com/#/apicenter/marketPlace/latest#inventoryManagement
 [walmart-inventory-get]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getInventoryForAnItem
+
+[walmart-reports]: https://developer.walmart.com/#/apicenter/marketPlace/latest#getReport
