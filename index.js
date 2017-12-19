@@ -1,3 +1,3 @@
 'use strict'
 
-const Walmart = require('./lib/client')
+module.exports = require('./lib/client')
