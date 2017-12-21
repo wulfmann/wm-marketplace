@@ -4,7 +4,7 @@
   "description": "Walmart Marketplace API client for Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,26 @@
     "url": "https://github.com/wulfmann/wm-marketplace/issues"
   },
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "homepage": "https://github.com/wulfmann/wm-marketplace#readme",
   "license": "MIT",
   "dependencies": {
+    "eslint-plugin-promise": "^3.6.0",
+    "jest": "^22.0.3",
     "node-rsa": "^0.4.2",
     "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
