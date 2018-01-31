@@ -29,6 +29,9 @@ const wmc = WMClient({
   correlationId: 'your-correlation-id',
   channelType: 'your-channel-type'
 })
+```
+
+See examples folder for more information.
 
 ## Currently Available Endpoints
 
