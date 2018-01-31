@@ -1,0 +1,10 @@
+{
+    "mysku": {
+        "sku": "mysku",
+        "quantity": {
+            "unit": "EACH",
+            "amount": 5,
+        },
+        "fullfillmentLagTime": 1
+    }
+}
