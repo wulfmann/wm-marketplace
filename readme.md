@@ -30,5 +30,26 @@ const wmc = WMClient({
   channelType: 'your-channel-type'
 })
 
+## Currently Available Endpoints
+
+### Inventory
+GetInventory
+UpdateInventory
+
+### Items
+GetAll
+GetItem
+
+### Orders
+GetAllReleased
+GetAll
+GetOrder
+
+### Prices
+ItemPrice
+
+### Reports
+GetReport
+
 [apiDocs]: https://developer.walmart.com/#/apicenter/marketPlace/latest
 [credentials]: https://seller.walmart.com/api-key
